@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 
+import "../styles/ShowQuestions.css";
+
 //Importando as perguntas
 import perguntas from "../data/perguntas";
 

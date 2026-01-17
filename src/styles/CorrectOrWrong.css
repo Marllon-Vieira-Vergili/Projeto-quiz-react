@@ -1,0 +1,49 @@
+/* Feedback visual de resposta */
+.feedback {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.feedback.correto {
+  background: #c6f6d5;
+  border: 2px solid #48bb78;
+}
+
+.feedback.errado {
+  background: #fed7d7;
+  border: 2px solid #f56565;
+}
+
+.feedback div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.feedback .icon {
+  font-size: 24px;
+}
+
+.feedback p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2d3748;
+}
+
+.feedback strong {
+  color: #1a202c;
+}

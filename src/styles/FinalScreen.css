@@ -1,0 +1,118 @@
+/* Tela Final */
+.final-screen {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 50px 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.final-card h1 {
+  color: #2d3748;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.resultado-principal {
+  margin-bottom: 40px;
+}
+
+.circulo-pontuacao {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 25px;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.pontuacao-grande {
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+.total {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 5px;
+}
+
+.total::before {
+  content: '/ ';
+}
+
+.porcentagem {
+  font-size: 28px;
+  color: #667eea;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.mensagem {
+  font-size: 18px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+/* Botão reiniciar */
+.btn-reiniciar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-reiniciar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.btn-reiniciar:active {
+  transform: translateY(0);
+}
+
+/* Responsividade da tela final */
+@media (max-width: 768px) {
+  .final-screen {
+    padding: 30px 20px;
+  }
+
+  .circulo-pontuacao {
+    width: 150px;
+    height: 150px;
+  }
+
+  .pontuacao-grande {
+    font-size: 48px;
+  }
+
+  .final-card h1 {
+    font-size: 26px;
+  }
+}

@@ -3,6 +3,7 @@
  */
 
 
+import "../styles/FinalScreen.css";
 import React from 'react'
 import { QuizContextHook } from '../context/QuizContext'
 

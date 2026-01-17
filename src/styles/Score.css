@@ -1,0 +1,47 @@
+/* Score Container */
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.score-box {
+  text-align: center;
+}
+
+.score-label {
+  color: #718096;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.score-number {
+  color: #667eea;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.progress-box p {
+  color: #4a5568;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsividade do score */
+@media (max-width: 768px) {
+  .score-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+}

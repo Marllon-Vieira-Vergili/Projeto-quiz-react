@@ -8,6 +8,7 @@
 
 
 import React from 'react'
+import "../styles/CorrectOrWrong.css";
 
 //Componente receberá a resposta selecionada, a resposta correta e mostrar na tela
 const CorrectOrWrong = ({respostaSelecionada, respostaCorreta, mostrar}) => {

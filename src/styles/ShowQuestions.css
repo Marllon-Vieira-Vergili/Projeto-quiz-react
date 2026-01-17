@@ -1,0 +1,100 @@
+/* Container principal do quiz */
+.questions-container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  animation: slideInQuestions 0.4s ease-out;
+}
+
+@keyframes slideInQuestions {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Seção de perguntas */
+.questions-index p {
+  color: #667eea;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.questions-index h2 {
+  color: #2d3748;
+  font-size: 24px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+/* Lista de respostas */
+.questions-index ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.questions-index li {
+  margin-bottom: 12px;
+}
+
+/* Botões de resposta */
+.select-answer {
+  width: 100%;
+  padding: 16px 20px;
+  background: #f7fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #2d3748;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-weight: 500;
+}
+
+.select-answer:hover:not(:disabled) {
+  background: #edf2f7;
+  border-color: #667eea;
+  transform: translateX(5px);
+}
+
+.select-answer:disabled {
+  cursor: not-allowed;
+}
+
+/* Estados de resposta */
+.select-answer.correto {
+  background: #c6f6d5;
+  border-color: #48bb78;
+  color: #22543d;
+}
+
+.select-answer.errado {
+  background: #fed7d7;
+  border-color: #f56565;
+  color: #742a2a;
+}
+
+/* Responsividade das questões */
+@media (max-width: 768px) {
+  .questions-container {
+    padding: 30px 20px;
+  }
+
+  .questions-index h2 {
+    font-size: 20px;
+  }
+
+  .select-answer {
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+}
