@@ -1,0 +1,133 @@
+/* Header da introdução */
+.header-layout {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.header-layout h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-layout img {
+  animation: bounce 2s infinite;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Container principal do quiz */
+.quiz-container-principal {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Instruções */
+.div-instruction {
+  margin-bottom: 2rem;
+}
+
+.div-instruction p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.div-instruction hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #7b68ee, transparent);
+  margin: 1.5rem 0;
+}
+
+/* Container do botão */
+.container-button {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.container-button button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.container-button button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.container-button button:active {
+  transform: translateY(-1px);
+}
+
+/* Animações */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-layout h1 {
+    font-size: 2rem;
+  }
+  
+  .quiz-container-principal {
+    padding: 1.5rem;
+  }
+  
+  .div-instruction p {
+    font-size: 1rem;
+  }
+  
+  .container-button button {
+    padding: 0.9rem 2.5rem;
+    font-size: 1.1rem;
+  }
+}
